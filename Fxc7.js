@@ -107,9 +107,9 @@ const { wait, simih, getBuffer, h2k, banner, generateMessageID, getGroupAdmins, 
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Farhan\n'
-            + 'ORG:Owner FXC7;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=628311800241:+62 831-1800-241\n'
+            + 'FN:Ilham\n'
+            + 'ORG:Owner IlhamBot;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6289693064160:+62 896-9630-4160\n'
             + 'END:VCARD'
 
 function kyun(seconds){
@@ -686,7 +686,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 		case 'daftar':
 		case 'verify':
 					frhan.updatePresence(from, Presence.composing)
-					if (isUser) return reply('kamu sudah Menjadi Temen IRIENEBOT:D')
+					if (isUser) return reply('kamu sudah Menjadi Temen ILHAMBOT:D')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
